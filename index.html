@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Contrataciones</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <script src="https://unpkg.com/pdf-lib"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Formulario de Prueba</h2>
+
+        <form id="miFormulario">
+
+            <div class="campo">
+                <label>Departamento</label>
+
+                <select id="departamento" required>
+                    <option value="">Seleccione</option>
+                    <option>LIMA</option>
+                    <option>LAMBAYEQUE</option>
+                    <option>AREQUIPA</option>
+                    <option>CUSCO</option>
+                    <option>PIURA</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label>Estado Civil</label>
+
+                <select id="estadoCivil" required>
+                    <option value="">Seleccione</option>
+                    <option>Soltero</option>
+                    <option>Casado</option>
+                    <option>Conviviente</option>
+                    <option>Divorciado</option>
+                    <option>Viudo</option>
+                </select>
+            </div>
+
+            <button type="submit">
+                Generar archivos
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
